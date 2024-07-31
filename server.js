@@ -26,11 +26,11 @@ app.get('/user', (req, res) => {
 });
 
 app.get("/", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "./Public", "index.html"));
+    res.sendFile(path.resolve(__dirname, "./public", "index.html"));
 })
 
 app.get("/contact", (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "./Public", "contact.html"));
+    res.sendFile(path.resolve(__dirname, "./public", "contact.html"));
 })
 
 app.listen(PORT, () => {
